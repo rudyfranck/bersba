@@ -1,0 +1,9 @@
+type Operation {
+    id: ID!
+    name: String!
+    description: String
+    move: String
+    estimatedTimeInHour: Float!
+    createdAt: String
+    editedAt: String
+}

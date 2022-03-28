@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="46.101.177.133" id="3bd579ac-6d14-4a7b-b0b3-2d80eed7b146" port="22" customName="rs.feedback.prod.source" nameFormat="CUSTOM" username="root">
+        <option name="customName" value="rs.feedback.prod.source" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="46.101.103.29" id="be8b671e-4109-4f91-9a9f-b5ddd621bd05" port="22" customName="rs.database.development.source" nameFormat="CUSTOM" username="root">
+        <option name="customName" value="rs.database.development.source" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="104.248.16.14" id="5961fc9e-4769-4efa-9545-2b452510aa6a" port="22" customName="rs-database-file" nameFormat="CUSTOM" username="root">
+        <option name="customName" value="rs-database-file" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="46.101.125.169" id="548a5615-1106-495a-b038-0f392a40e53a" port="22" customName="rs.feedback.development.source" nameFormat="CUSTOM" username="root">
+        <option name="customName" value="rs.feedback.development.source" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="207.154.227.200" id="698f390c-7d49-44c8-8af8-a47ca3d90575" port="22" customName="rs-cloud-discovery-gateway-source" nameFormat="CUSTOM" username="root">
+        <option name="customName" value="rs-cloud-discovery-gateway-source" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="207.154.242.175" id="b6a09bab-5c4e-4262-86b2-de1c7503577c" port="22" customName="rs.orders.components.development.source" nameFormat="CUSTOM" username="root">
+        <option name="customName" value="rs.orders.components.development.source" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="157.230.115.134" id="03ef4ed8-576f-46bf-b2a8-f115aa32df82" port="22" customName="rs.database.prod.source" nameFormat="CUSTOM" username="root">
+        <option name="customName" value="rs.database.prod.source" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="157.230.29.190" id="815da69b-a9dc-474a-9177-4b6d63c584da" port="22" customName="rs.users.notification.prod.source" nameFormat="CUSTOM" username="root">
+        <option name="customName" value="rs.users.notification.prod.source" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="159.89.9.131" id="81caf1d9-dc0b-46af-8be5-cb1a24cb1d4b" port="22" customName="rs.orders.components.prod.source" nameFormat="CUSTOM" username="root">
+        <option name="customName" value="rs.orders.components.prod.source" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="165.232.71.237" id="f536c4f4-e0be-43e3-8f80-5e3eb81eaf4c" port="22" customName="rs.staging.source" nameFormat="CUSTOM" username="root" useOpenSSHConfig="true">
+        <option name="customName" value="rs.staging.source" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="104.248.16.104" id="965cc817-f69f-447f-938e-d6e3a7b83d1c" port="22" customName="rs.parameters.dev.source" nameFormat="CUSTOM" username="root" useOpenSSHConfig="true">
+        <option name="customName" value="rs.parameters.dev.source" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="142.93.100.157" id="1b7493ee-e90f-4eb5-9903-68e78af6d89f" port="22" customName="rs.tasks.dev.source" nameFormat="CUSTOM" username="root" useOpenSSHConfig="true">
+        <option name="customName" value="rs.tasks.dev.source" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" host="161.35.29.226" id="c66fa38c-e62e-40c3-9e46-b48f7f09e328" port="22" customName="rs.tasks.prod.source" nameFormat="CUSTOM" username="root" useOpenSSHConfig="true">
+        <option name="customName" value="rs.tasks.prod.source" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>

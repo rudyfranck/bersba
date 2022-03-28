@@ -1,0 +1,5 @@
+type OrderCompletionLine {
+    created: Object
+    delivered: Object
+    done: Object
+}

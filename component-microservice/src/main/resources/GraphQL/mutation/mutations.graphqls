@@ -1,0 +1,23 @@
+type Mutation {
+
+    #--------------- item ----------------
+
+    createOrEditItem(input: ItemInput!, action: MutationAction): Item
+    deleteItem(input: ID!): Boolean
+
+    #--------------- operation ----------------
+
+    createOrEditOperation(input: OperationInput!, action: MutationAction, case: OperationEdition): Operation
+    deleteOperation(input: ID!): Boolean
+
+    #--------------- technology ----------------
+
+    createOrEditTechnology(input: TechnologyInput!, action: MutationAction): Technology
+    deleteTechnology(input: ID!): Boolean
+
+    #--------------- item's categories --------------
+
+    createOrEditItemCategory(input: ItemCategoryInput!, action: MutationAction): ItemCategory
+    deleteItemCategory(input: ID!): Boolean
+
+}

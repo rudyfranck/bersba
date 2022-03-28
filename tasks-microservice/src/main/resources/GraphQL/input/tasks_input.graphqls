@@ -1,0 +1,14 @@
+input TaskInput {
+    id: ID
+    quantity: BigDecimal
+    estimatedTimeInHour: BigDecimal
+    description: String
+    estimatedStartDate: DateTime
+    estimatedEndDate: DateTime
+    workcenterId: ID
+}
+
+input TaskWorkerTimeInput{
+    id: ID!
+    startAt: DateTime!
+}

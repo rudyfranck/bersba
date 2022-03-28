@@ -1,0 +1,128 @@
+#input CreateOrEditCustomerInput {
+#    id: ID
+#    name: String
+#    description: String
+#    email: String
+#    phone: String
+#    representativeName: String
+#}
+
+#input AddEntityToCustomerInput {
+#    customerId: ID!
+#    name: String!
+#    description: String
+#    email: String
+#    phone: String
+#    representativeName: String
+#}
+
+input CreateOrderInput {
+    customerId: ID!
+    typeId: ID
+    referenceNumber: Int
+}
+
+input EditOrderInput {
+    orderId: ID!
+    agentId: ID #this is a reference to user
+    managerId: ID #this is a reference to user
+    #this must be in format RFC 3339, ex: 2002-10-02T10:00:00-05:00
+    estimatedAt: DateTime
+    description: String
+    typeId: ID
+    #this must be in format RFC 3339, ex: 2002-10-02T10:00:00-05:00
+    packagingAt: DateTime
+    #this must be in format RFC 3339, ex: 2002-10-02T10:00:00-05:00
+    deliveryAt: DateTime
+    #this must be in format RFC 3339, ex: 2002-10-02T10:00:00-05:00
+    receptionAt: DateTime
+    isSuspended: Boolean
+}
+
+input CategoryInOrderInput {
+    categoryId: ID!
+    itemCount: Int = 0
+}
+
+input AttachCategoryWithOrderInput {
+    orderId: ID!
+    categories: [CategoryInOrderInput!] = []
+}
+
+input EditCategoryOfOrderInput {
+    orderId: ID!
+    categoryId: ID!
+    progress: Float = 0.0 #it must be between 0 and 100
+    itemCount: Int = 0
+}
+
+input RemoveEntityOfCustomerInput {
+    customerId: ID!
+    entityId: ID!
+}
+
+input ItemInOrder {
+    orderId: ID!
+    itemIds: [ID!]
+}
+
+input EditItemInOrderInput {
+    orderId: ID!
+    itemId: ID!
+    quantity: Float
+}
+
+input DepartmentWithTask {
+    taskId: ID!
+    departmentIds: [ID!]
+}
+
+input WorkingCenterWithTask {
+    taskId: ID!
+    workingCenterIds: [ID!]
+}
+
+input UserWithTask {
+    taskId: ID!
+    userIds: [ID!]
+}
+
+input CommentTaskInput {
+    id: ID
+    taskId: ID
+    comment: String
+}
+
+input CreateOrEditTechnologyInput {
+    id: ID
+    name: String
+    description: String
+    operationIds: [ID]
+}
+
+input TechnologyAndOperation {
+    technologyId: ID
+    operationId: ID
+    priority: Int
+}
+
+input ItemTechnologyInput {
+    itemId: ID!
+    technologiesIds: [ID]
+}
+
+
+input FindItemAttachedToTechnologyInput {
+    orderId: ID!
+    technologiesIds: [ID]
+}
+
+input FindOperationAttachedToTechnologyInput {
+    orderId: ID!
+    technologiesIds: [ID]
+}
+
+input FindTaskAttachedToTechnologyInput {
+    orderId: ID!
+    technologiesIds: [ID]
+}

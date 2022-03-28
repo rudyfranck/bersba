@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="rs.orders.components.development" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="not-use2">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/order-microservice" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="not-use3">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/component-microservice" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="rs.database.development">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/notification-microservice" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="rs.database.production">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/discovery-ms" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="rs.feedback.development">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/order-microservice" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="rs.feedback.production">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/notification-microservice" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="rs.orders.components.development">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/order-microservice" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="rs.orders.components.production">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/discovery-ms" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="rs.parameters.dev">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/order-microservice" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="rs.staging.server">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/order-microservice" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="rs.tasks.dev">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/user-microservice" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="rs.tasks.prod">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/order-microservice" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="rs.users.notification.production">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/discovery-ms" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="rs.users.notifications.development">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/gateway-demo" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

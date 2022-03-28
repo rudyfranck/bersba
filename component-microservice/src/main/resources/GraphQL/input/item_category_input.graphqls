@@ -1,0 +1,11 @@
+input ItemCategoryInput {
+    id: ID
+    name: String
+    description: String
+    children: [ID!]
+}
+
+input ItemCategoryIndex  {
+    index: Int!,
+    id: ID!
+}

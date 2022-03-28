@@ -1,0 +1,19 @@
+scalar DateTime
+scalar Object
+scalar BigDecimal
+
+schema {
+    query: Query
+    mutation: Mutation
+    #    subscription: Subscription
+}
+
+type PageInfo {
+    hasPreviousPage: Boolean
+    hasNextPage: Boolean
+}
+
+enum MutationAction {
+    ATTACH
+    DETACH
+}

@@ -1,0 +1,9 @@
+input ExecutorInput {
+    id: ID
+    firstname: String
+    lastname: String
+    middlename: String
+    phone: String
+    email: String
+    photo:ID
+}

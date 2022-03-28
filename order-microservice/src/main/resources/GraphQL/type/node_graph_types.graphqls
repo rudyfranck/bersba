@@ -1,0 +1,24 @@
+interface ElkGraphNode {
+    id: ID!
+    height: Int!
+    width: Int!
+}
+
+type ElkGraphLink {
+    id: String!
+    source: ID!
+    target: ID!
+}
+
+type ElkGraphItemNode implements ElkGraphNode {
+    id: ID!
+    height: Int!
+    width: Int!
+    node: Item!
+}
+
+type ElkGraphItem {
+    nodes: [ElkGraphItemNode!]!
+    links: [ElkGraphLink!]!
+}
+

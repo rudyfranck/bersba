@@ -1,0 +1,110 @@
+type Order {
+    id: ID!
+    referenceNumber: String!
+    description: String
+    createdAt: DateTime!
+    editedAt: DateTime!
+    customer: Customer
+    manager: Agent
+    agent: Agent
+    startAt: DateTime
+    estimatedAt: DateTime
+    progress: Float
+    type: OrderType
+    deliveryStartAt: DateTime!
+    deliveryEndAt: DateTime!
+    deliveryAt: DateTime
+    packagingAt: DateTime
+    receptionAt: DateTime
+    items: [Item!]
+    tasks: [Task!]
+    technologies: [Technology!]
+    parameters: [Parameter!]
+    categories: [ItemCategory!]
+    worklogs: [Worklog!]
+    status: OrderStatus!
+    statistics: OrderStatistics
+}
+
+type OrderConnection {
+    edges: [OrderEdge]
+    pageInfo: PageInfo
+}
+
+type OrderEdge {
+    cursor: String
+    node: Order
+}
+
+enum OrderStatus {
+    DRAFT
+    SUSPENDED
+    ANALYZING
+    PRODUCTION
+    DELIVERED
+}
+
+enum OrderLayerType {
+    USER
+    DEPARTMENT
+}
+
+type OrderSearchInputValue {
+    id:ID!
+    input: [String!]!
+    first: Int
+    after: ID
+}
+
+type OrderSearchInstance {
+    input: OrderSearchInputValue!
+    items: ItemConnection @connection(for: "Item")
+    tasks: TaskConnection @connection(for: "Task")
+    technologies: TechnologyConnection @connection(for: "Technology")
+    parameters: ParameterConnection @connection(for: "Parameter")
+}
+
+type ItemCategoryStatistics {
+    id: ID!
+    numberOfItems: Int!
+    progress: Float!
+    name: String!
+}
+
+type ItemCategoryStatisticsConnection {
+    edges: [ItemCategoryStatisticsEdge]
+    pageInfo: PageInfo
+}
+
+type ItemCategoryStatisticsEdge {
+    cursor: String
+    node: ItemCategoryStatistics
+}
+
+type DepartmentStatistics {
+    id: ID!
+    name: String!
+    description: String
+    priority: Int!
+    rowIndex: Int!
+    isActive: Boolean!
+    isDone: Boolean!
+    progress: Float!
+    workload: Float!
+}
+
+type DepartmentStatisticsConnection {
+    edges: [DepartmentStatisticsEdge]
+    pageInfo: PageInfo
+}
+
+type DepartmentStatisticsEdge {
+    cursor: String
+    node: DepartmentStatistics
+}
+
+type OrderStatistics {
+    id: ID!
+    itemCategory: [ItemCategoryStatistics!]
+    departments: [DepartmentStatistics!]
+}

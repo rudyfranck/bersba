@@ -1,0 +1,9 @@
+type TechnologyEdge {
+    cursor: String
+    node: Technology
+}
+
+type TechnologyConnection {
+    edges: [TechnologyEdge]
+    pageInfo: PageInfo
+}

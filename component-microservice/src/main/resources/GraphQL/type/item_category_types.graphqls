@@ -1,0 +1,38 @@
+type ItemCategory {
+    id: ID!
+    name: String!
+    description: String
+    createdAt: DateTime
+    editedAt: DateTime
+    children: [ItemCategory!]
+    subItems: [Item!]
+}
+
+type InformationUsage {
+    id: ID!
+    name: String!
+    description: String
+    from: DateTime
+    to: DateTime
+    usage: Int!
+}
+
+type ItemCategoryEdge {
+    cursor: String
+    node: ItemCategory
+}
+
+type ItemCategoryConnection {
+    edges: [ItemCategoryEdge]
+    pageInfo: PageInfo
+}
+
+type InformationUsageEdge {
+    cursor: String
+    node: InformationUsage
+}
+
+type InformationUsageConnection {
+    edges: [InformationUsageEdge]
+    pageInfo: PageInfo
+}

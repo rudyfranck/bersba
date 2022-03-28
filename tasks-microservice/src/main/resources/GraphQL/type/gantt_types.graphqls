@@ -1,0 +1,12 @@
+type GanttData {
+    TaskID: ID!
+    TaskName: String!
+    StartDate: DateTime!
+    EndDate: DateTime
+    Duration: Float
+    Progress: Float
+    Predecessor: ID
+    subtasks: [GanttData!]
+    item: Item
+    operation: Operation
+}

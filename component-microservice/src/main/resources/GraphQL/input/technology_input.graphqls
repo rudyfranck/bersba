@@ -1,0 +1,11 @@
+input TechnologyInput {
+    id: ID
+    name: String
+    description: String
+    operations: [TechnologyAndOperation!]
+}
+
+input TechnologyAndOperation {
+    operationId: ID
+    priority: Int
+}

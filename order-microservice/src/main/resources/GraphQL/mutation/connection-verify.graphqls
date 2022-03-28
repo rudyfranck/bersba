@@ -1,0 +1,19 @@
+type CustomerConnection {
+    edges: [CustomerEdge]
+    pageInfo: PageInfo
+}
+
+type CustomerEdge {
+    cursor: String
+    node: Customer
+}
+
+type CommentConnection {
+    edges: [CommentEdge]
+    pageInfo: PageInfo
+}
+
+type CommentEdge {
+    cursor: String
+    node: Comment
+}

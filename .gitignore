@@ -1,0 +1,8 @@
+*.yaml
+*.yml
+**/*.sh
+**/*.env
+**/*.js
+**/*.sql
+
+/mongo-volume
